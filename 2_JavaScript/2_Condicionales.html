@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Condicionales</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Condicionales</h1>
+        <script> 
+		    //variable
+		    var age; 
+			//formulario
+			age= prompt("Dime tu edad"); 
+		    //condicion básica
+		/*	if( age < 18 )
+			{
+                alert ("under age");
+		    }
+		    // condicion con bifurcacion
+			 if(age < 18)
+			 {
+				 alert("under age");
+		     }
+		     else 
+			 {
+             alert("Adult");
+			 }
+            //Condición Booleana
+			 if (true)
+			 {
+				 alert("it is true");
+			 }
+			 if(false)
+			 {
+				 alert ("It is false");
+			 }
+                */
+
+			//otra manera 
+		
+			 var IfItsAdult = age >=18;
+			 
+			 if (IfItsAdult == true)
+			 {
+				 alert ("Adult");
+			 }
+			 else //cuando es menor de edad
+			 {
+				 if(age <3)
+				 {
+					 alert ("it is a baby");
+				 }
+				 else if (age >= 3 && age < 13) //si es igual o menor que 3 y menor que 13
+				 {
+					 alert("it is a child");
+				 }
+				 else if(age >= 13 && age < 18)
+				 {
+					alert("it is a teenager");
+				 }
+			 }
+			
+			
+		</script>
+	</body>
+</html>
