@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicios String</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Ejercicios String</h1>
+<script>
+//TERCER EJERCICIO: MOSTRAR INICIALES EN MAYÚSCULAS.
+//indexof lo que hace es buscarnos una palabra a partir de un sitio.
+////////////////////////////////
+var texto = "aaa bbb ccc ddd eee";
+var posEspacio = 0;
+var letra = texto.charAt(0).toUpperCase(); //significa que es igual a nada
+var iniciales = ""; 
+//Bucle se repite mientras consigamos un espacio y Que pasae del espacio a la siguiente letra y la ponga en mayúscula
+while (posEspacio >= 0) 
+{
+    iniciales = iniciales + letra;
+    posEspacio = texto.indexOf (" ", posEspacio +1);
+    letra= texto.charAt(posEspacio + 1).toUpperCase();
+}
+///////////////////////////////
+
+
+var posEspacio1 = texto.indexOf(" ");
+var letra_1 = texto.charAt (0).toUpperCase ();
+document.write(texto + "<br/>");
+document.write(letra_1);
+
+var letra_2 = texto.charAt (posEspacio1 +1).toUpperCase ();
+document.write(letra_2);
+
+var posEspacio2 = texto.indexOf (" ", posEspacio1 + 1); // ¿que queremos buscar? un espacio. ¿donde empieza a buscarlo? despues del espacio1
+var letra_3 = texto.charAt (posEspacio2 + 1).toUpperCase ();
+document.write(letra_3);
+
+var posEspacio3= texto.indexOf (" ", posEspacio2 + 1); // ¿que queremos buscar? un espacio. ¿donde empieza a buscarlo? despues del espacio1
+var letra_4 = texto.charAt (posEspacio3 + 1).toUpperCase ();
+document.write(letra_4);
+
+var posEspacio4 ;
+
+</script>
+	</body>
+
+</html>

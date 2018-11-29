@@ -26,29 +26,29 @@
 
    var inicio; inicio = prompt("¿Me das un principio?");
    var fin = prompt("¿Me das un final?");
-       fin= parseFloat (fin);
-       inicio= parseFloat (inicio);
-       contador=inicio;
-   
-    if (inicio<fin)  // de menor a mayor
+       fin= parseInt (fin);
+       inicio= parseInt (inicio); //con parsefloat hace que la letra siempre sea reconocida como numero entero cuando sea numérica
+       contador= inicio;
+       
+       if (inicio<fin)  // de menor a mayor
        {
        while (contador<fin)
        {   
         alert(contador);
-        contador = contador + 1
+        contador = contador + 1 //Aumentar en uno el contador
        }
        }
-
+ 
        else if (inicio>fin) // de mayor a menor
         {
           while (contador>fin)
         {
          alert(contador);
-         contador = contador -1
+         contador = contador -1 //Restar en uno el contador
         }
          }
 
-/* - Hacerlo con el bucle fuera del if ( o el if dentro de while)
+/* - Hacerlo con un bucle while fuera y un if dentro de while)
    - sin ningun "if"  (dos bucles) 
    - con un único bucle while, sin IF*/
 

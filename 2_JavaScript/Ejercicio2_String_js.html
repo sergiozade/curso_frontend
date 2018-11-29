@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicios String</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Ejercicios String</h1>
+<script>
+
+	//var texto = prompt("Introduzca un texto");
+	//var restoTexto = texto.substring(1);
+
+	//Segundo Ejercicio
+	           //0123456789101112
+    
+    //Resolviendo el 3º:
+    //JUAN ROGRIGUEZ LOPEZ 
+    /*/var texto = "juan rodriguez Lopez";
+
+    var posPrimerEspacio = texto.indexOf (" "); //4
+    var primeraPalabra = texto.substring (0, posPrimerEspacio); //localizamos el primer espacio
+    // Mostrar en Proper Case (Primera Mayuscula) SOLO la primera palabra
+     document.write ("<br/>" + primeraPalabra.charAt(0). toUpperCase ()
+                             + primeraPalabra.substring(0+1).toLocaleLowerCase ());
+
+    var posSegundoEspacio = texto.indexOf (" ");
+    var segundaPalabra = texto.substring (segundaPalabra = texto.substring(0, posSegundoEspacio));
+      document.write ("<br/>" + segundaPalabra.charAt(0). toUpperCase ()
+                              + segundaPalabra.substring(0+1).toLocaleLowerCase ());
+
+	/Para sacar la segunda palabra, primero sacamos el segundo espacio 
+    //(posprimerespacio +1 le decimos que pille le segundo espacio)hasta  lenght, es decir, hasta el final de la palabra
+
+   
+    //Ahora lo que hacemos es que 0 sea el valor del espaciao despues de la segunda palabra
+    // para así indicar que el siguiente valor sea L y la pongamos en mayúsculas.
+    var posSegundoEspacio = texto.indexOf (" ");
+    var segundaPalabra = texto.substring (segundaPalabra = texto.substring(0, posSegundoEspacio)); 
+    
+    document.write ( "<br/>" + segundaPalabra.charAt(0). toUpperCase
+                             + segundaPalabra.substring(0+1).toLocaleLowerCase ()); */
+
+var texto = "juan rodriguez Lopez";
+
+var posEspacio_1 = texto.indexOf(" ");
+var inicial = texto.charAt (0).toUpperCase();
+var restoPalabra = texto.substring (1, posEspacio_1).toLowerCase();
+var propperCase = inicial + restoPalabra;
+
+while (posEspacio_1 >=0)
+{
+   posEspacio_2 = texto.indexOf(" ", posEspacio_1 + 1);
+   if (posEspacio_2 == -1){
+       posEspacio_2 = texto.length;
+   }  
+   inicial = texto.charAt(posEspacio_1 + 1).toUpperCase ();
+   restoPalabra = texto.substring(posEspacio_1 + 2, posEspacio_2);
+   propperCase = propperCase + " " + inicial + restoPalabra;
+   posEspacio_1 = texto.indexOf (" ", posEspacio_1 + 1);
+
+}
+    document.write(propperCase + "<br/>");
+    
+</script>
+	</body>
+
+</html>
