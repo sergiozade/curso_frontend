@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Bucles For </title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1> Bucles For </h1>
+	</body>
+
+<script>
+
+//hacer tabla html que mueste tabala multiplicar del 1 al 10. (harían falta dos bucles for)
+
+document.write ("<table border = \"1\">");
+document.write ("<tr>");
+for (var num = 1; num <9; num++)
+    {
+	document.write ("<th>");
+	document.write ("tabla del " + num);
+	document.write ("</th>");
+    }
+    document.write ("</tr>");
+
+
+for (var fila = 1; fila < 9; fila++)
+{
+	document.write ("<tr>");
+	//AQUI, MOSTRAR UNA TABLA DE MULTIPLICAR
+    for (var num = 1; num < 9; num++)
+    {
+	document.write ("<td>");
+	document.write (num + " * " + fila + " = " + num * fila);
+	document.write ("</td>");
+    }
+    document.write ("</tr>"); 	
+}
+
+document.write ("</tr>");
+
+
+document.write ("</table>");
+
+</script>
+
+</html>

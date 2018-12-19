@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Objeto Documento</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Objeto Documento</h1>
+<script>
+				//document: objeto que correpsonde al documento HTML
+				//write: es una fucnion propia del objeto document que escribe texto en el documento, es decir un método.
+			    //<br/>: Esta etiqueta nos permite realizar un salto de line
+                //Nan= Es un número que no es un número que puede provenir de un texto)
+				//IsNaN= No es un número
+	            //ParseInt= devuelve un tipo number, convierte texto en número:
+				
+
+			var nombre= ""; 
+			var textoEdad= ""; 
+			var edad= parseInt(textoEdad);
+
+			   while (isNaN(edad) || edad <= 0)
+			   {
+                     textoEdad=prompt("  Indique su edad  ");
+					 edad = parseInt (textoEdad);
+                 
+			   }
+            
+               while (nombre == "")
+			   {
+                        nombre = prompt (" Indique su nombre ");
+			   }
+  
+			alert ("hola " + nombre + ":\n \t- Tu edad es: \n \t- " + "\"" + edad + " años\" ");	
+
+			document.write(" un texto cualquiera  ");
+			document.write("<h2> Cabezera 2ª nivel </h2>");
+            document.write(" Anda! Te llamas  " + nombre);
+			document.write(" <br/> y eres un teenager de  " + edad);
+
+		
+
+ </script>
+
+	</body>
+</html>

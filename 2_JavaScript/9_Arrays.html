@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Ejemplos Arrays </title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1> Ejemplos Arrays </h1>
+    </body>
+    <script>
+
+        //1 FORMA DECLARACION ARRAY 1 Y EN ESTE CASO DE NUMEROS
+    var notas = new Array ();
+    notas [0] = 3 ; 
+    notas [2] = 7;
+    notas [1] = 8.5;
+    notas [3] = 10;
+    notas [4] = 9;
+   
+   var i = 0;
+   while (i< 7){
+       
+   document.write ( "<br/> Elemento " + i + " : " + notas[i]);
+   i = i + 1;
+  // document.write ( "<br/> Elemento 1:" + notas [1]); 
+  // document.write ( "<br/> Elemento 2:" + notas [2]); 
+
+      }
+
+ //2 FORMA DECLARACION ARRAY 2 Y EN ESTE CASO DE LETRAS
+    
+var ciudades = ["Madrid", "Barcelona", "Cordoba"];
+i=0;
+while (i<3)
+{
+    document.write ("<br/>" + i + ": " + ciudades [i]);
+    i= i+1;
+}
+
+//2 FORMA DECLARACION ARRAY 3
+var coches = new Array ("kia" + "Seat" + "Mercedes"); 
+
+//como crear un array vacio de una forma distinta
+ var arrayVacio = []; 
+
+
+var moviles = new Array ();
+
+moviles [0] = new Object ();
+moviles [0].marca = "Sony Ericsson";
+moviles [0].ram = 2;
+
+moviles [1] = new Object ();
+moviles [1].marca = "Xiaomi";
+moviles [1].ram = 3;
+
+moviles [2] = new Object ();
+moviles [2].marca = "Alcatel";
+moviles [2].ram = 4;
+
+moviles[1].ram = 6;
+document.write ("<br/> RAM ultimo elemento:" + moviles[ moviles.length - 1].ram + " Gb" );
+
+
+
+    </script>
+
+</html>

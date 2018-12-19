@@ -1,0 +1,73 @@
+     <!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Funciones con retorno</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Funciones con retorno</h1>
+
+ <!--- 
+   - * Crea una función que:
+     1 - Muestra 6 cabeceras del H1 al H6 con texto que pase por parámetro dandole un valor de 
+       entrada y salida como en el ejemplo 12_funciones  (mediante bucle)
+     2 - Otra función que reciba 3 parámetros. Los dos primeros son los operandos, el 3º el operador 
+       (sumar "+", resta "-", multiplicar "*", div "/") y que muestre 
+        el resultado (dentro de lafunción) PISTA: Usando Condicionales hy RETURN
+     3  - Una función que eleve al cubo un número. comprobar que funciona con 3 (27) y con 
+       4 (64).  
+
+   - * Crea las mismas funciones pero usando:
+      1 - En la 1, con un array que tenga los valores var cabeceras = ["H1", "H2"... "H6"]
+      2 - En la 2, dos funciones que hagan lo mismo pero:
+               - Una usando la funcion eval (), que ejecute un texto c omo si fuera un  
+                  codigo JS
+               - Dos usando solo el operador ternario (sin if ())
+      3 - Una función que eleve a la X potencia (segundo parámetro), mediante un bucle y
+          si sabes lo que e suna funcion revursiva, hazlo mediante una funcion recursiva.         
+  --->
+<script>
+//---------------Ejercicio 1 forma uno:
+   function dameSeisCabeceras (texto)
+   {
+      for (var nivel = 1; nivel <= 6; nivel++)
+          {
+           var abreH= "<h" + nivel + ">";
+           var cierraH= "</h" + nivel +  ">";
+           document.write (abreH + texto + cierraH);     
+          }
+   }   
+    dameSeisCabeceras ("Un texto");
+   
+//---------------Ejercicio 1 forma 2:
+
+  function dameCabecera (texto, nivel)
+  {
+           var abreH= "<h" + nivel + ">";
+           var cierraH= "</h" + nivel +  ">";
+           return abreH + texto + cierraH
+  }
+
+  function muestraSeisCabeceras (titulo)
+  {
+    for(var i = 1; i <= 6; i++)
+      { document.write (dameCabecera (titulo,i))
+      
+      }
+  }
+
+muestraSeisCabeceras ("Que pasa tron");
+
+
+//--------------Ejercicio 3:
+ function elevaCubo (numero)
+ {
+     return numero * numero * numero;
+ }
+ //27
+ document.write ("3 al cubo =" + elevaCubo (3) + "<br/>")
+//64
+ document.write ("3 al cubo =" + elevaCubo (4) + "<br/>")
+</script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Funciones</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Funciones</h1>
+	
+<script>
+
+     function mostrarTitulo ()
+      {
+		  document.write ("<h2>Sub-Titulo de la página </h2>")
+		  document.write (" <br/>")
+	  }
+
+	 var titulo = "Otro titulo";
+	 mostrarTitulo (); //Invocar la función
+
+//Funcion que recibe datos
+	 function calculaDescuento (precio, descuento)
+	 {
+        var precioConDesc;
+		precioConDesc = precio - precio * descuento /100;
+		document.write ("Precio: " + precio + ", descuento: " + descuento +
+		                ", total: " + precioConDesc + "<br/>");		 
+	 } 
+
+	 calculaDescuento (100, 15); //aplicamos un 15%
+	 calculaDescuento (200, 20); //aplicamos un 20%
+	 var otroPrecio = 300;
+	 var otroDescuento = 10;
+	 calculaDescuento(otroPrecio,5); //aplicamos un 5%
+	 calculaDescuento (otroPrecio, otroDescuento);
+</script>
+</body>
+</html>

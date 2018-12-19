@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Bucles</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>bucles</h1>
+    </body>
+
+<script> 
+//Hacerlo  con un bucle while fuera y un if dentro de while) 
+var inicio; inicio = prompt("¿Me das un principio?");
+   var fin = prompt("¿Me das un final?");
+       fin= parseInt (fin);
+       inicio= parseInt (inicio);
+       contador=inicio;
+
+while (contador != fin) //mientras contador sea distinto a fin
+{
+	 alert(contador); //nos va a mostrar el contador desde el principio
+     if(inicio<fin) //Y si inicio es menor que fin: suma de menor a mayor 2, 3, 4..
+	 { 
+       
+		contador = contador +1;
+	 }
+	 else  //Pero si inicio es mayor O IGUAL que fin: resta de mayor a menor 4, 3, 2..
+	 {
+        
+		contador = contador -1
+	 }
+}
+     alert(contador); //Este Alert nos permite ver el último número
+</script>
+</html> 

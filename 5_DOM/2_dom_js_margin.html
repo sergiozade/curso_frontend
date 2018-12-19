@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>T&iacute;tulo</title>
+		<meta charset="UTF-8"/>	
+	</head>
+	<body>
+        <div id="d1" style="margin: 0px 0px 0px 5px; background-color:chocolate;">  
+             UN TEXTO     
+        </div>  	
+<script>
+    var posicion = 5;
+    var velocidad = 0.1;
+    var d1 = document.getElementById ("d1");
+
+    var relojId = setInterval(funCadaDecimaSeg, 10);
+
+    function funCadaDecimaSeg ()
+    {
+        if (posicion >= window.innerWidth -200) //le restamos al ancho de la ventana -200 para que nuestro div se quede en pantalla
+            {
+                clearInterval(relojId);
+            }
+        else //posicion <400
+           {             
+        posicion += velocidad;                      
+        velocidad += 0.05;
+
+                            //cuando queremos sustituir un numero por una variable ponemos "", ++ y dentro la variable, posición.1
+       d1.setAttribute ("style", "margin: 0px 0px 0px " + posicion + "px; background-color: chocolate; width:200px"); //le damos los 200px que hemos quitado en ventana.
+        
+           }  
+    }
+  //  setInterval (funCadaDecimaSeg, 10); // Es una funcion le pasamos el nombrede la funcion y un valor
+
+</script>
+	</body>
+</html>

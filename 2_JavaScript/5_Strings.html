@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Strings, metodos y propiedades</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Strings, metodos y propiedades</h1>
+<script>
+
+var texto = prompt ("Introduzca un texto");
+document.write ("su texto: </br>");
+document.write (texto + "</br>");
+
+document.write ("Longitud = " + texto.length+ "<br/>"); //comprobamos la longidutd de ese texto
+
+document.write("En mayúsculas: " + texto.toUpperCase() + "<br/>"); //Para pone todo en mayuss
+document.write("En minúsculas: " + texto.toLowerCase() + "<br/>"); //Para poner todo en minuss
+
+document.write(" primer car&aacute;cter:" + texto.charAt(0) + "<br/>" ); //Te devuelve el caracter en la posición indicada
+document.write(" tercer car&aacute;cter:" + texto.charAt(5) + "<br/>");
+
+document.write("Primer espacio está en: " + texto.indexOf (" ") + "<br/>" ); //
+
+document.write("Primera mitad del texto: " + texto.substring (0, texto.length / 2)+ "<br/>" ); //
+document.write("Segunda mitad del texto: " + texto.substring (texto.length / 2)+ "<br/>" );
+ </script>
+	</body>
+
+</html>

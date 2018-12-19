@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>T&iacute;tulo</title>
+		<meta charset="UTF-8"/>	
+	</head>
+	<body>
+	  <h1>Elementos DOM de el siguiente DIV</h1>
+        <div id="un_div" style="background-color:yellow"> 
+		 <p> un texto </p>
+		<table id= "tabla_paises">
+		 <tr>
+           <td>Ciudad </td>
+		   <td>Pais </td>
+		 </tr>
+        </table>
+		  </div>
+		  
+<script>
+  var unDiv = document.getElementById("un_div"); //busca de entre todos los elementos uno por uno el id llamado div y lo guarda en una variable
+  var nodoH2 = document.createElement ("h2");// aquí crea un nodo h2 que la guarda en la matriz del html le añade un elemento h2
+  var textoEnH2= document.createTextNode ("Un Subtitulo añadido por JS"); //Creamos un texto que guardamosen en alguna parte del documento el textoEnH2
+  nodoH2.appendChild(textoEnH2); //coje el textoEnh2 y en vez de ser hijo de HTML quitalo y ponlo como hijo de h2 
+  unDiv.appendChild(nodoH2); //que donde esté el elemento unDiv hacemos nodoH2 hijo
+
+  unDiv.setAttribute ("style", "background-color: red"); //cambiar el estilo de fondo de un elemento html desde Javascript
+  document.getElementsByTagName ("p") [0] .appendChild (document.createTextNode ("TEXTO APPEND"));
+
+
+</script>
+	</body>
+</html>

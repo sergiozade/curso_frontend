@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Ejercicio 1 Arrays </title>
+		<meta charset="UTF-8"/>	
+<!-- Ejercicio:
+- Pedir al usuario las ciudadeds a las que quiere viajar.
+- si el susaurio no pone nada, el programa termina y se muestra su lista de ciudades. -->	
+	</head>
+	<body>
+		<h1> Ejercicio 1 Arrays </h1>
+    </body>
+   
+<script>
+    
+var ciudades = new Array (); //Creamos un array
+var nuevaCiudad = prompt ("introduzca una ciudad (o nada para terminar)"); //preguntamos al usiario
+var i = 0; //es la varibale contador que se suma y a su vez hace de indicador.
+
+while (nuevaCiudad != "")
+{
+	ciudades [i] = nuevaCiudad;
+	i = i + 1;
+	nuevaCiudad = prompt ("Introduzca una ciudad (o nada para terminar)");
+}
+i=0; // volvemos a poner el i=0 para que continuemos al siguiente bucle, si no arriba
+
+while (i < ciudades.length) // con lenght nos aseguramos que cuente todo el array desde el 0 al 3
+{
+	document.write ("<br/>" + ciudades [i] );
+	 i = i + 1;
+}
+
+
+
+
+
+    </script>
+</html>

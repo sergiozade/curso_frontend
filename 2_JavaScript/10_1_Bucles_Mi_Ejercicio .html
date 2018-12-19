@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Bucles For </title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1> Bucles For </h1>
+	</body>
+	<!-- Tabla a mano html
+	<table border= "1">  
+           <tr> 
+				  <td> Tabla del 1 </td>
+				  <td> Tabla del 2 </td>
+				  <td> Tabla del 3 </td>
+		   </tr>
+            
+           <tr>  
+				  <td> 1 * 1 = 1</td>
+				  <td> 2 * 1 = 2</td>
+				  <td> 3 * 1 = 3</td>
+           </tr>
+
+		   <tr>  
+				<td> 1 * 2 = 1</td>
+				<td> 2 * 2 = 4</td>
+				<td> 3 * 2 = 6</td>
+		   
+	</table> -->
+
+
+
+<script>
+  //Abreviaturas
+   var j = 10;
+   j = j+ 1; j += 1; j++;
+
+ /* //Bucle For
+  document.write ("<h2> tabla del 3 </h2>");
+  for (var i = 0; i <= 10; i += 1) //i+= suma un mismo valor a una misma variable en vez de poner i = i + 1
+  {
+	 document.write ("<p> 3 * " + i+ " = " + 3*i + " </p>");
+  }   */
+
+//hacer tabla html que mueste tabala multiplicar del 1 al 10. (harían falta dos bucles for)
+
+document.write ("<table border = 1 >"); 
+
+
+
+ for (var fila = 1; fila <= 10; fila ++)
+ {
+	document.write ("<tr> Tabla" + fila + "</tr>" );
+
+
+  for (var col = 0; col <= 10; col += 1)
+   {
+	document.write ("<td>" + fila + " * " + col+ " = " + fila*col + "</td>" );
+	
+
+   }
+ }
+
+document.write("</table>");
+
+
+
+ //10_1_Bucles_Mi_Ejercicio 
+
+
+/*
+document.write ("<tr>");
+
+document.write ("<td> wasup nigga </td> ");
+document.write ("<td> wasup nigga </td> ")
+
+document.write ("</tr>");
+
+document.write ("<tr>");
+
+document.write ("<td> nigga wasup </td> ");
+document.write ("<td> nigga wasup </td> ")
+*/
+
+
+
+
+</script>
+
+</html>

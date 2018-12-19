@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Funciones con retorno</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Funciones con retorno</h1>
+
+<script>
+	       //Siempre que llamemos a un a funcion tenemos que ponerle los parentesis si no se cree que quieres mostrar una variable y te muestra el codigo fuente
+          //Funcion que deuelve un valor
+	function dameTitulo() 
+	{
+		return "Titutlo funciones con retorno";
+	}	  
+     
+	  document.write ("<H1>" + dameTitulo() + "</H1>");
+	  document.write ("<H2>" + dameTitulo() + "</H2>");
+
+	  var tituloWeb = "<H3>" + dameTitulo () +  "</H3>"
+	  document.write (tituloWeb);
+
+	function dameCabecera (texto, nivel) //nivel = H1, H2, H3....
+	 {
+      var abreH = "<H" + nivel + ">";
+	  var cierraH = "</H" + nivel + ">";
+	  return abreH + texto + cierraH;
+	 }
+	 document.write (dameCabecera ("Cabezera nivel 1", 1));
+	 document.write (dameCabecera ("Cabezera nivel 1", 2));
+     document.write (dameCabecera ("Cabezera nivel 1", 3));
+</script>
+	</body>
+</html>

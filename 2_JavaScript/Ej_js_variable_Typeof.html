@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Bucles</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>bucles</h1>
+    </body>
+    <script>
+    
+       var inicio; 
+       var fin;
+       var inicioNoEsUnNumero = isNaN (inicio); //Variable:its not a number.¿No es un número?.
+    //Sin variable intermedia
+     while (isNaN(inicio))
+     {
+          inicio = prompt("Indique un numero");
+     }
+     //Con variable intermedia
+     var inicioNoEsUnNumero = isNaN(inicio); //declaramos la variable pero ahora mismo está vacia es decir undefined´
+     while(inicioNoEsUnNumero) // TRUE(se va ejecutar una y otra vez por que cumple que no es un numero)
+       {
+           inicio = prompt ("Indique un numero"); //preguntamos que escriba un número
+           inicioNoEsUnNumero = isNaN(inicio); //Como volvemos a escribir un nuevo valor tenemos que preguntar si es un número y mientras no lo sea seguirá el bucle
+       }
+     //Con variable intermedia legible
+     var inicioEsUnNumero = !isNaN(inicio); //declaramos la variable undefined es disntinta a no es un numero, es decir, es un numero.
+     while (inicioNoEsUnNumero == false) //aquí decimos que sino es un número, no es un número es decir es False
+     {
+         inicio = prompt ("Indique un numero");
+         inicioEsUnNumero = ! isNaN (inicio); //Mientras sea true es un número
+     }
+
+    </script>
+    </html> 

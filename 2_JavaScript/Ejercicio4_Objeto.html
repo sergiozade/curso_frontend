@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplos objetos</title>
+		<meta charset="UTF-8"/>		
+	</head>
+	<body>
+		<h1>Ejemplos objetos</h1>
+    <!-- · Preguntar persona_2 sus datos
+         · Preguntar en que orden queremos mostar sus datos:
+             N = Orden alfabético del nombre.
+             A = Orden alfabético apellido.
+             E = Orden de edad.
+         · Cuando la gente meta una letra que no sea N A o E que salga otra vez el 
+        prompt hasta que introduzca el caracter indicado.
+          -->
+<script>
+ //Preguntar a la persona sus datos.
+ var persona_1 = new Object ();
+ var persona_2 = new Object ();
+     
+/* persona_2.nombre = prompt ("Escribe tu nombre");
+    document.write (persona_2.nombre);
+
+    persona_2.apellido= prompt ("Escribe tu apellido");
+    document.write (" " + persona_2.apellido)
+
+    persona_2.edad = prompt ("¿Qué edad tienes?");
+    document.write (" " + persona_2.edad);
+
+    persona_2.salario = prompt ("¿Qué salario ganas?");
+    persona_2.salario = parseFloat (persona_2.salario);
+    document.write ("<br/>");
+    document.write (" Y tu salario es: " + persona_2.salario); */
+                         
+    persona_1.nombre = "Wlaudio";          //document.write (persona_1.nombre);
+    persona_1.apellido = "Domenec";        //document.write (" " + persona_1.apellido);
+    persona_1.edad = 44;                   //document.write (" " + persona_1.edad + " años");
+    persona_1.edad=parseFloat (persona_1.edad); //document.write ("<br/>");
+    persona_1.salario = 120;               //document.write (" Tus ganacias son :" + persona_1.salario);
+    persona_1.salario=parseFloat (persona_1.salario);     
+
+    document.write ("<br/>");
+    document.write ("<br/>");
+
+    persona_2.nombre = "caura";            //document.write (persona_2.nombre);
+    persona_2.apellido = "sumendico";      //document.write (" " + persona_2.apellido);
+    persona_2.edad = 25;                   //document.write (" " + persona_2.edad + " años");
+    persona_2.edad=parseFloat (persona_2.edad);     //document.write ("<br/>");      
+    persona_2.salario = 25000;              //document.write (" Tus ganacias son :" + persona_2.salario);
+    persona_2.salario=parseFloat (persona_2.salario);
+
+    persona_1.todosLosDatos = persona_1.nombre + " " + persona_1.apellido + " años:  " + persona_1.edad + " dinero:  "
+                              + persona_1.salario;
+   
+    persona_2.todosLosDatos = persona_2.nombre + " " + persona_2.apellido + " años:  " + persona_2.edad + " dinero:  "
+                              + persona_2.salario;
+
+
+
+
+  //Preguntar a la persona en que orden queremos mostrar sus datos.
+  // NOMBRE
+  var orden= prompt ("- Si quieres ordenar por nombre, escribe N"); 
+  
+  if (orden.toUpperCase () == "N" ) 
+  {
+      if ( persona_2.nombre > persona_1.nombre)
+      {
+           document.write (persona_2.todosLosDatos);
+           document.write ("<br/>");
+           document.write (persona_1.todosLosDatos);
+      }
+      else 
+      {
+        document.write (persona_1.todosLosDatos);
+        document.write ("<br/>");
+        document.write (persona_2.todosLosDatos);
+      }
+  }
+   else if (orden.toLocaleUpperCase () == "A")
+   {
+       if (persona_2.apellido > persona_2.apellido) 
+       {
+           document.write (persona_2.todosLosDatos);
+           document.write ("<br/>");
+           document.write (persona_1.todosLosDatos);
+        }
+      dsmckdsfds
+       
+   }
+
+
+
+
+
+
+   
+
+
+
+
+
+    </script>
+</body>
+</html>
